@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2002</title>
+    <script>
+        function myFunction(){
+    
+            
+            var aux= +prompt("escolha um número(1 a 6)")
+
+            switch(aux){
+
+                case 1:
+                 document.getElementById("um").innerHTML = ' <img src ="diddy.jpg">'
+                 break   
+            
+            
+             case 2:
+                 document.getElementById("dois").innerHTML =  ' <img src ="epstein.jpg">' 
+                 break   
+            
+            
+             case 3:
+                 document.getElementById("tres").innerHTML =  ' <img src ="tgmolested.jpg">'
+                 break   
+            
+            
+             case 4:
+                 document.getElementById("quatro").innerHTML = '  <img src ="verde.jpg">'
+                 break  
+
+                  case 5:
+                 document.getElementById("cinco").innerHTML =  ' <img src ="robao.jpg">'
+                 break 
+
+                 case 6:
+                 document.getElementById("seis").innerHTML = ' <img src ="daniel alves.jpg">'
+                 break 
+                default:
+                    alert("Voce digitou um número iexistente")
+
+        }
+            
+
+
+    }
+      
+
+    </script>
+
+    <style>
+        table, tr, td{
+            border-color: chartreuse;
+            margin: auto;
+            text-align: center;
+            width: 50%;
+
+        }
+
+        td{
+            width: 200px;
+            height: 200px;
+
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            background-color: blue;
+
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Aula de JavaScript</h1>
+
+
+    <table border="3">
+        <tr><td id="um">1</td><td id="dois">2<td id="tres">3</td></td></tr>
+
+        <tr><td id="quatro">4</td><td id="cinco">5<td id="seis">6</td></td></tr>
+
+        <tr><td colspan="3" style="border: 200px;">
+            <button type="button" onclick="myFunction()">Clique Aqui</button>
+
+        </td></tr>
+
+    </table>
+</body>
+</html>
